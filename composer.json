@@ -1,0 +1,45 @@
+{
+    "name": "tyhpdef/intervention-image-laravel-impl",
+    "description": "Implementation package for tyhpdef/intervention-image-laravel. Require tyhpdef/intervention-image-laravel, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "4.1.1.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": "8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/laravel-framework": "@dev",
+                "tyhpdef/intervention-image": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/intervention-image-laravel"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "intervention/image-laravel": "4.1.1"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/laravel-framework": "@dev",
+        "tyhpdef/intervention-image": "@dev"
+    }
+}
